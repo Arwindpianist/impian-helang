@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge"
 
 export function Footer() {
   return (
-    <footer className="bg-blue-900/80 glass text-white py-12 backdrop-blur-lg">
+    <footer className="bg-slate-950/90 text-white py-12 backdrop-blur-lg">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
@@ -18,7 +18,7 @@ export function Footer() {
             <p className="text-blue-200 text-sm mb-4 font-medium">
               HRD Corp Certified Training Provider committed to professional excellence.
             </p>
-            <Badge className="bg-blue-700 text-white font-semibold">HRD Corp Certified</Badge>
+            <Badge className="bg-blue-600 text-white font-semibold">HRD Corp Certified</Badge>
           </div>
 
           <div>
@@ -61,7 +61,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/#hrd-corp" className="hover:text-white transition-colors font-medium">
+                <Link href="/#hrd-corp" className="hover:text-blue-900 transition-colors font-medium">
                   HRD Corp Claims
                 </Link>
               </li>

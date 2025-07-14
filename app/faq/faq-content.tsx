@@ -3,14 +3,14 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { CheckCircle, Award, Users, Clock, MapPin } from "lucide-react"
+import { CheckCircle, Award, Users, Clock, MapPin, BookOpen, MessageCircle } from "lucide-react"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 
 export default function FAQContent() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100">
       {/* Hero Section */}
       <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="bg-gradient-to-br from-blue-50 to-blue-100 py-10 md:py-20">
         <div className="container mx-auto px-2 sm:px-4">
@@ -27,12 +27,12 @@ export default function FAQContent() {
       </motion.section>
 
       {/* FAQ Section */}
-      <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="py-10 md:py-20 bg-white">
+      <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="py-10 md:py-20 bg-gradient-to-br from-blue-100 to-blue-200">
         <div className="container mx-auto px-2 sm:px-4">
           <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1 }} className="max-w-4xl mx-auto">
             <Accordion type="single" collapsible className="space-y-4">
               {/* HRD Corp Related Questions */}
-              <AccordionItem value="hrd-corp" className="border border-blue-100 rounded-lg px-6 glass">
+              <AccordionItem value="hrd-corp" className="border border-blue-200 rounded-lg px-6 glass bg-white/80 backdrop-blur-sm">
                 <AccordionTrigger className="text-blue-900 font-semibold text-left">
                   Are these courses HRD Corp claimable?
                 </AccordionTrigger>
@@ -46,7 +46,7 @@ export default function FAQContent() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="training-format" className="border border-blue-100 rounded-lg px-6 glass">
+              <AccordionItem value="training-format" className="border border-blue-200 rounded-lg px-6 glass bg-white/80 backdrop-blur-sm">
                 <AccordionTrigger className="text-blue-900 font-semibold text-left">
                   Do you offer online or physical training?
                 </AccordionTrigger>
@@ -66,7 +66,7 @@ export default function FAQContent() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="in-house" className="border border-blue-100 rounded-lg px-6 glass">
+              <AccordionItem value="in-house" className="border border-blue-200 rounded-lg px-6 glass bg-white/80 backdrop-blur-sm">
                 <AccordionTrigger className="text-blue-900 font-semibold text-left">
                   Can we request in-house or private sessions?
                 </AccordionTrigger>
@@ -85,7 +85,7 @@ export default function FAQContent() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="payment" className="border border-blue-100 rounded-lg px-6 glass">
+              <AccordionItem value="payment" className="border border-blue-200 rounded-lg px-6 glass bg-white/80 backdrop-blur-sm">
                 <AccordionTrigger className="text-blue-900 font-semibold text-left">
                   What is the payment and refund policy?
                 </AccordionTrigger>
@@ -108,7 +108,7 @@ export default function FAQContent() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="course-duration" className="border border-blue-100 rounded-lg px-6 glass">
+              <AccordionItem value="course-duration" className="border border-blue-200 rounded-lg px-6 glass bg-white/80 backdrop-blur-sm">
                 <AccordionTrigger className="text-blue-900 font-semibold text-left">
                   How long are the training sessions?
                 </AccordionTrigger>
@@ -128,7 +128,7 @@ export default function FAQContent() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="certification" className="border border-blue-100 rounded-lg px-6 glass">
+              <AccordionItem value="certification" className="border border-blue-200 rounded-lg px-6 glass bg-white/80 backdrop-blur-sm">
                 <AccordionTrigger className="text-blue-900 font-semibold text-left">
                   Do participants receive certificates?
                 </AccordionTrigger>
@@ -151,7 +151,7 @@ export default function FAQContent() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="registration" className="border border-blue-100 rounded-lg px-6 glass">
+              <AccordionItem value="registration" className="border border-blue-200 rounded-lg px-6 glass bg-white/80 backdrop-blur-sm">
                 <AccordionTrigger className="text-blue-900 font-semibold text-left">
                   How do I register for a training program?
                 </AccordionTrigger>
@@ -178,7 +178,7 @@ export default function FAQContent() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="group-size" className="border border-blue-100 rounded-lg px-6 glass">
+              <AccordionItem value="group-size" className="border border-blue-200 rounded-lg px-6 glass bg-white/80 backdrop-blur-sm">
                 <AccordionTrigger className="text-blue-900 font-semibold text-left">
                   What is the typical group size for training sessions?
                 </AccordionTrigger>
@@ -198,7 +198,7 @@ export default function FAQContent() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="materials" className="border border-blue-100 rounded-lg px-6 glass">
+              <AccordionItem value="materials" className="border border-blue-200 rounded-lg px-6 glass bg-white/80 backdrop-blur-sm">
                 <AccordionTrigger className="text-blue-900 font-semibold text-left">
                   Are training materials provided?
                 </AccordionTrigger>
@@ -225,7 +225,7 @@ export default function FAQContent() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="follow-up" className="border border-blue-100 rounded-lg px-6 glass">
+              <AccordionItem value="follow-up" className="border border-blue-200 rounded-lg px-6 glass bg-white/80 backdrop-blur-sm">
                 <AccordionTrigger className="text-blue-900 font-semibold text-left">
                   Is there follow-up support after training?
                 </AccordionTrigger>
@@ -256,31 +256,33 @@ export default function FAQContent() {
         </div>
       </motion.section>
 
-      {/* Additional Information */}
-      <section className="py-20 bg-blue-50">
+      {/* CTA Section */}
+      <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1 }} className="py-20 bg-blue-900">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-blue-900 mb-4" style={{ fontFamily: "Footlight MT Light, serif" }}>
-              Still Have Questions?
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: "Footlight MT Light, serif" }}>
+              Ready to Transform Your Career?
             </h2>
-            <p className="text-lg text-gray-700 mb-8" style={{ fontFamily: "Footlight MT Light, serif" }}>
-              Can't find the answer you're looking for? Contact us directly and we'll be happy to help.
+            <p className="text-lg text-blue-100 mb-8" style={{ fontFamily: "Footlight MT Light, serif" }}>
+              Join hundreds of professionals who have enhanced their skills with our training programs
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                  Contact Us
+              <Link href="/courses">
+                <Button size="lg" className="bg-white text-blue-900 hover:bg-gray-100">
+                  <BookOpen className="mr-2 h-5 w-5" />
+                  Explore Courses
                 </Button>
               </Link>
-              <Link href="/courses">
-                <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
-                  View Courses
+              <Link href="/contact">
+                <Button size="lg" variant="outline" className="border-white text-blue hover:bg-teal-500 hover:text-white">
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  Get Started
                 </Button>
               </Link>
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   )
 } 

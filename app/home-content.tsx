@@ -11,7 +11,7 @@ import { motion } from "framer-motion"
 
 export default function HomeContent() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100">
       {/* Hero Section */}
       <motion.section initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="bg-gradient-to-br from-blue-50 to-blue-100 py-10 md:py-20">
         <div className="container mx-auto px-2 sm:px-4">
@@ -70,7 +70,7 @@ export default function HomeContent() {
       </motion.section>
 
       {/* About Section */}
-      <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1 }} id="about" className="py-10 md:py-20 bg-white">
+      <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1 }} id="about" className="py-10 md:py-20 bg-gradient-to-br from-blue-100 to-blue-200">
         <div className="container mx-auto px-2 sm:px-4">
           <div className="text-center mb-10 md:mb-16">
             <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-4" style={{ fontFamily: "Footlight MT Light, serif" }}>
@@ -83,7 +83,7 @@ export default function HomeContent() {
           </div>
 
           <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.2 }} className="grid gap-6 md:gap-8 md:grid-cols-3">
-            <Card className="text-center border-blue-100 w-full max-w-full glass">
+            <Card className="text-center border-blue-200 w-full max-w-full glass bg-white/80 backdrop-blur-sm">
               <CardHeader>
                 <Award className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                 <CardTitle className="text-blue-900" style={{ fontFamily: "Footlight MT Light, serif" }}>
@@ -97,7 +97,7 @@ export default function HomeContent() {
               </CardContent>
             </Card>
 
-            <Card className="text-center border-blue-100 w-full max-w-full glass">
+            <Card className="text-center border-blue-200 w-full max-w-full glass bg-white/80 backdrop-blur-sm">
               <CardHeader>
                 <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                 <CardTitle className="text-blue-900" style={{ fontFamily: "Footlight MT Light, serif" }}>
@@ -111,7 +111,7 @@ export default function HomeContent() {
               </CardContent>
             </Card>
 
-            <Card className="text-center border-blue-100 w-full max-w-full glass">
+            <Card className="text-center border-blue-200 w-full max-w-full glass bg-white/80 backdrop-blur-sm">
               <CardHeader>
                 <CheckCircle className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                 <CardTitle className="text-blue-900" style={{ fontFamily: "Footlight MT Light, serif" }}>
@@ -129,7 +129,7 @@ export default function HomeContent() {
       </motion.section>
 
       {/* Courses Section */}
-      <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1 }} id="courses" className="py-20 bg-blue-50">
+      <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1 }} id="courses" className="py-20 bg-gradient-to-br from-blue-200 to-blue-300">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-blue-900 mb-4" style={{ fontFamily: "Footlight MT Light, serif" }}>
@@ -142,7 +142,7 @@ export default function HomeContent() {
 
           <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.2 }} className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Emotional Intelligence Course */}
-            <Card className="border-blue-200 hover:shadow-lg transition-shadow w-full max-w-full glass" id="emotional-intelligence">
+            <Card className="border-blue-300 hover:shadow-lg transition-shadow w-full max-w-full glass bg-white/90 backdrop-blur-sm" id="emotional-intelligence">
               <CardHeader>
                 <div className="flex justify-between items-start mb-4">
                   <Badge className="bg-blue-100 text-blue-800">Popular</Badge>
@@ -184,7 +184,7 @@ export default function HomeContent() {
             </Card>
 
             {/* Train The Trainer Programme */}
-            <Card className="border-blue-200 hover:shadow-lg transition-shadow w-full max-w-full glass" id="train-the-trainer">
+            <Card className="border-blue-300 hover:shadow-lg transition-shadow w-full max-w-full glass bg-white/90 backdrop-blur-sm" id="train-the-trainer">
               <CardHeader>
                 <div className="flex justify-between items-start mb-4">
                   <Badge className="bg-green-100 text-green-800">Flagship Program</Badge>
@@ -229,7 +229,7 @@ export default function HomeContent() {
       </motion.section>
 
       {/* Testimonials Section */}
-      <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1 }} className="py-20 bg-white">
+      <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1 }} className="py-20 bg-gradient-to-br from-blue-100 to-blue-200">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-blue-900 mb-4" style={{ fontFamily: "Footlight MT Light, serif" }}>
@@ -241,7 +241,7 @@ export default function HomeContent() {
           </div>
 
           <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.2 }} className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card className="text-center border-blue-100 glass">
+            <Card className="text-center border-blue-200 glass bg-white/80 backdrop-blur-sm">
               <CardContent className="pt-6">
                 <div className="flex justify-center mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -257,7 +257,7 @@ export default function HomeContent() {
               </CardContent>
             </Card>
 
-            <Card className="text-center border-blue-100 glass">
+            <Card className="text-center border-blue-200 glass bg-white/80 backdrop-blur-sm">
               <CardContent className="pt-6">
                 <div className="flex justify-center mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -273,7 +273,7 @@ export default function HomeContent() {
               </CardContent>
             </Card>
 
-            <Card className="text-center border-blue-100 glass">
+            <Card className="text-center border-blue-200 glass bg-white/80 backdrop-blur-sm">
               <CardContent className="pt-6">
                 <div className="flex justify-center mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -293,7 +293,7 @@ export default function HomeContent() {
       </motion.section>
 
       {/* FAQ Section */}
-      <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1 }} className="py-20 bg-blue-50">
+      <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1 }} className="py-20 bg-gradient-to-br from-blue-300 to-blue-400">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-blue-900 mb-4" style={{ fontFamily: "Footlight MT Light, serif" }}>
@@ -306,7 +306,7 @@ export default function HomeContent() {
 
           <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.2 }} className="max-w-4xl mx-auto">
             <Accordion type="single" collapsible className="space-y-4">
-              <AccordionItem value="hrd-corp" className="border border-blue-100 rounded-lg px-6 glass">
+              <AccordionItem value="hrd-corp" className="border border-blue-200 rounded-lg px-6 glass bg-white/80 backdrop-blur-sm">
                 <AccordionTrigger className="text-blue-900 font-semibold text-left">
                   Are these courses HRD Corp claimable?
                 </AccordionTrigger>
@@ -316,7 +316,7 @@ export default function HomeContent() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="training-format" className="border border-blue-100 rounded-lg px-6 glass">
+              <AccordionItem value="training-format" className="border border-blue-200 rounded-lg px-6 glass bg-white/80 backdrop-blur-sm">
                 <AccordionTrigger className="text-blue-900 font-semibold text-left">
                   Do you offer online or physical training?
                 </AccordionTrigger>
@@ -326,7 +326,7 @@ export default function HomeContent() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="certification" className="border border-blue-100 rounded-lg px-6 glass">
+              <AccordionItem value="certification" className="border border-blue-200 rounded-lg px-6 glass bg-white/80 backdrop-blur-sm">
                 <AccordionTrigger className="text-blue-900 font-semibold text-left">
                   Do participants receive certificates?
                 </AccordionTrigger>
@@ -366,7 +366,7 @@ export default function HomeContent() {
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-900">
+                <Button size="lg" variant="outline" className="border-white text-blue hover:bg-teal-500 hover:text-white">
                   <MessageCircle className="mr-2 h-5 w-5" />
                   Get Started
                 </Button>

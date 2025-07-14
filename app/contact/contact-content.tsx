@@ -46,7 +46,7 @@ export default function ContactContent() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 to-blue-100 py-20">
         <div className="container mx-auto px-4">
@@ -62,11 +62,11 @@ export default function ContactContent() {
       </section>
 
       {/* Contact Information & Form */}
-      <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="py-10 md:py-20 bg-white">
+      <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="py-10 md:py-20 bg-gradient-to-br from-blue-100 to-blue-200">
         <div className="container mx-auto px-2 sm:px-4">
           <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1 }} className="grid gap-8 lg:grid-cols-2 max-w-6xl mx-auto">
             {/* Contact Information */}
-            <motion.div whileHover={{ scale: 1.02 }} className="border-blue-200 w-full max-w-full glass bg-white/80 border border-blue-200 text-blue-900">
+            <motion.div whileHover={{ scale: 1.02 }} className="border-blue-300 w-full max-w-full glass bg-white/90 backdrop-blur-sm border border-blue-300 text-blue-900">
               <CardHeader>
                 <CardTitle className="text-blue-900" style={{ fontFamily: "Footlight MT Light, serif" }}>
                   Contact Information
@@ -118,7 +118,7 @@ export default function ContactContent() {
             </motion.div>
 
             {/* Quick Contact Options */}
-            <motion.div whileHover={{ scale: 1.02 }} className="border-blue-200 glass">
+            <motion.div whileHover={{ scale: 1.02 }} className="border-blue-300 glass bg-white/90 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="text-blue-900" style={{ fontFamily: "Footlight MT Light, serif" }}>
                   Quick Contact
@@ -149,7 +149,7 @@ export default function ContactContent() {
             </motion.div>
 
             {/* Google Maps */}
-            <motion.div whileHover={{ scale: 1.02 }} className="border-blue-200 glass">
+            <motion.div whileHover={{ scale: 1.02 }} className="border-blue-300 glass bg-white/90 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="text-blue-900" style={{ fontFamily: "Footlight MT Light, serif" }}>
                   Our Location
@@ -182,7 +182,7 @@ export default function ContactContent() {
             </motion.div>
 
             {/* Contact Form */}
-            <motion.div whileHover={{ scale: 1.02 }} className="border-blue-200 glass">
+            <motion.div whileHover={{ scale: 1.02 }} className="border-blue-300 glass bg-white/90 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="text-blue-900" style={{ fontFamily: "Footlight MT Light, serif" }}>
                   Send Us a Message
@@ -283,7 +283,7 @@ export default function ContactContent() {
       </motion.section>
 
       {/* Additional Information */}
-      <section className="py-20 bg-blue-50">
+      <section className="py-20 bg-gradient-to-br from-blue-200 to-blue-300">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
