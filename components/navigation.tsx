@@ -71,44 +71,44 @@ export function Navigation() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-blue-300 glass shadow-2xl rounded-xl bg-white/90 backdrop-blur-sm">
-            <nav className="flex flex-col space-y-4 pt-4">
+          <div className="md:hidden mt-4 pb-6 border-t border-blue-300 glass shadow-2xl rounded-xl bg-white/90 backdrop-blur-sm">
+            <nav className="flex flex-col space-y-6 pt-6 px-4">
               <Link 
                 href="/" 
-                className="text-blue-800 hover:text-blue-900 transition-colors"
+                className="text-blue-800 hover:text-blue-900 transition-colors py-2 px-3 rounded-lg hover:bg-blue-50"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
               </Link>
               <Link 
                 href="/courses" 
-                className="text-blue-800 hover:text-blue-900 transition-colors"
+                className="text-blue-800 hover:text-blue-900 transition-colors py-2 px-3 rounded-lg hover:bg-blue-50"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Courses
               </Link>
               <Link 
                 href="/trainer" 
-                className="text-blue-800 hover:text-blue-900 transition-colors"
+                className="text-blue-800 hover:text-blue-900 transition-colors py-2 px-3 rounded-lg hover:bg-blue-50"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Trainer
               </Link>
               <Link 
                 href="/contact" 
-                className="text-blue-800 hover:text-blue-900 transition-colors"
+                className="text-blue-800 hover:text-blue-900 transition-colors py-2 px-3 rounded-lg hover:bg-blue-50"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact
               </Link>
               <Link 
                 href="/faq" 
-                className="text-blue-800 hover:text-blue-900 transition-colors"
+                className="text-blue-800 hover:text-blue-900 transition-colors py-2 px-3 rounded-lg hover:bg-blue-50"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 FAQ
               </Link>
-              <Button className="bg-blue-600 hover:bg-blue-700 w-full">
+              <Button className="bg-blue-600 hover:bg-blue-700 w-full py-3 mt-2">
                 Register Now
               </Button>
             </nav>
