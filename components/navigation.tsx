@@ -17,15 +17,15 @@ export function Navigation() {
       <div className="container mx-auto px-2 sm:px-4 py-2 sm:py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 sm:space-x-3 min-w-0">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <Link href="/" className="flex items-center space-x-2 sm:space-x-3 min-w-0">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
               <span className="text-white font-bold text-base sm:text-lg">IH</span>
             </div>
-            <div className="min-w-0">
-                          <h1 className="text-base sm:text-xl font-bold text-blue-900 truncate max-w-[120px] sm:max-w-xs" style={{ fontFamily: "Footlight MT Light, serif" }}>
-              Impian Helang Sdn Bhd
-            </h1>
-            <p className="text-xs sm:text-sm text-blue-700 truncate">HRD Corp Certified Training Provider</p>
+            <div className="min-w-0 flex-1">
+              <h1 className="text-sm sm:text-base lg:text-xl font-bold text-blue-900 leading-tight" style={{ fontFamily: "Footlight MT Light, serif" }}>
+                Impian Helang Sdn Bhd
+              </h1>
+              <p className="text-xs sm:text-sm text-blue-700 leading-tight">HRD Corp Certified Training Provider</p>
             </div>
           </Link>
 
